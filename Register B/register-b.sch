@@ -1,0 +1,1277 @@
+EESchema Schematic File Version 4
+LIBS:register-b-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Register A"
+Date ""
+Rev "v01"
+Comp ""
+Comment1 ""
+Comment2 "creativecommons.org/licenses/by/4.0"
+Comment3 "License CC by 4.0"
+Comment4 "Author: Shane Poppleton"
+$EndDescr
+$Comp
+L 74xx:74LS173 U3
+U 1 1 5E3DFD75
+P 7050 3250
+F 0 "U3" V 7400 2550 50  0000 L CNN
+F 1 "74LS173" V 7050 3100 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 7050 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS173" H 7050 3250 50  0001 C CNN
+	1    7050 3250
+	0    1    1    0   
+$EndComp
+Text HLabel 1950 2200 0    50   BiDi ~ 0
+BUS_7
+Text HLabel 1950 2100 0    50   BiDi ~ 0
+BUS_6
+Text HLabel 1950 2000 0    50   BiDi ~ 0
+BUS_5
+Text HLabel 1950 1900 0    50   BiDi ~ 0
+BUS_4
+Text HLabel 1950 1800 0    50   BiDi ~ 0
+BUS_3
+Text HLabel 1950 1700 0    50   BiDi ~ 0
+BUS_2
+Text HLabel 1950 1600 0    50   BiDi ~ 0
+BUS_1
+Text HLabel 1950 1500 0    50   BiDi ~ 0
+BUS_0
+Wire Wire Line
+	1950 2200 2350 2200
+Wire Wire Line
+	1950 2100 2300 2100
+Wire Wire Line
+	1950 2000 2250 2000
+Wire Wire Line
+	1950 1900 2200 1900
+Wire Wire Line
+	1950 1800 2150 1800
+Wire Wire Line
+	1950 1700 2100 1700
+Wire Wire Line
+	1950 1600 2050 1600
+Wire Wire Line
+	1950 1500 2000 1500
+Connection ~ 2550 2200
+Connection ~ 2650 2100
+Wire Wire Line
+	2750 2000 3700 2000
+Connection ~ 2750 2000
+Wire Wire Line
+	2850 1900 3800 1900
+Connection ~ 2850 1900
+Wire Wire Line
+	2950 1800 3900 1800
+Connection ~ 2950 1800
+Wire Wire Line
+	3050 1700 4000 1700
+Connection ~ 3050 1700
+Wire Wire Line
+	3150 1600 4100 1600
+Connection ~ 3150 1600
+Connection ~ 3250 1500
+Wire Wire Line
+	5000 2650 5100 2650
+$Comp
+L power:GND #PWR06
+U 1 1 5E471A93
+P 8450 3100
+F 0 "#PWR06" H 8450 2850 50  0001 C CNN
+F 1 "GND" H 8455 2927 50  0000 C CNN
+F 2 "" H 8450 3100 50  0001 C CNN
+F 3 "" H 8450 3100 50  0001 C CNN
+	1    8450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2650 7150 2650
+Wire Wire Line
+	7150 2650 8450 2650
+Wire Wire Line
+	8450 2650 8450 3100
+Wire Wire Line
+	3850 2650 4100 2650
+Wire Wire Line
+	6150 3250 6150 2650
+Text HLabel 8750 2550 2    50   Input ~ 0
+~BI~
+Wire Wire Line
+	4700 2550 4800 2550
+Wire Wire Line
+	5100 2650 6150 2650
+Wire Wire Line
+	2550 2200 2550 2750
+Wire Wire Line
+	2650 2100 2650 2750
+Wire Wire Line
+	2750 2000 2750 2750
+Wire Wire Line
+	2850 1900 2850 2750
+Wire Wire Line
+	2950 1800 2950 2750
+Wire Wire Line
+	3050 1700 3050 2750
+Wire Wire Line
+	3150 1600 3150 2750
+Wire Wire Line
+	3250 1500 3250 2750
+Wire Wire Line
+	5300 1900 5300 2750
+Wire Wire Line
+	5400 2000 5400 2750
+Wire Wire Line
+	5500 2100 5500 2750
+Wire Wire Line
+	5600 2200 5600 2750
+Wire Wire Line
+	7350 1500 7350 2750
+Wire Wire Line
+	7450 1600 7450 2750
+Wire Wire Line
+	7550 1700 7550 2750
+Wire Wire Line
+	7650 1800 7650 2750
+Connection ~ 5100 2650
+Wire Wire Line
+	5100 2650 5100 2750
+Connection ~ 6150 2650
+Wire Wire Line
+	6150 2650 7050 2650
+Connection ~ 7050 2650
+Wire Wire Line
+	7050 2650 7050 2750
+Connection ~ 7150 2650
+Wire Wire Line
+	7150 2650 7150 2750
+Wire Wire Line
+	3850 2650 3850 3250
+Connection ~ 5000 2650
+Wire Wire Line
+	5000 2650 5000 2750
+Wire Wire Line
+	4700 2750 4700 2550
+Wire Wire Line
+	4800 2750 4800 2550
+Connection ~ 4800 2550
+Wire Wire Line
+	4800 2550 6750 2550
+Wire Wire Line
+	6750 2750 6750 2550
+Connection ~ 6750 2550
+Wire Wire Line
+	6750 2550 6850 2550
+Wire Wire Line
+	6850 2750 6850 2550
+Connection ~ 6850 2550
+Wire Wire Line
+	6850 2550 8250 2550
+Wire Wire Line
+	6450 2750 6450 2450
+Wire Wire Line
+	6450 2450 8450 2450
+Wire Wire Line
+	8450 2450 8450 2200
+Wire Wire Line
+	8450 2200 8600 2200
+Text HLabel 8750 2200 2    50   Input ~ 0
+CLR
+Wire Wire Line
+	4400 2750 4400 2450
+Wire Wire Line
+	4400 2450 6450 2450
+Connection ~ 6450 2450
+Text HLabel 1950 2350 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	1950 2350 4600 2350
+Wire Wire Line
+	4600 2350 4600 2750
+Wire Wire Line
+	4600 2350 6400 2350
+Wire Wire Line
+	6650 2350 6650 2750
+Connection ~ 4600 2350
+Wire Wire Line
+	3850 3700 3850 3900
+Wire Wire Line
+	3850 3900 3450 3900
+Wire Wire Line
+	3450 3900 3450 3750
+Wire Wire Line
+	4100 3250 4100 2650
+Connection ~ 4100 2650
+Wire Wire Line
+	4100 2650 5000 2650
+Wire Wire Line
+	3550 3750 3550 4050
+Wire Wire Line
+	3550 4050 8050 4050
+Text HLabel 8750 4050 2    50   Input ~ 0
+~BO~
+$Comp
+L 74xx:74LS245 U1
+U 1 1 5E3C277E
+P 3050 3250
+F 0 "U1" V 3400 2850 50  0000 R CNN
+F 1 "74LS245" V 3050 3400 50  0000 R CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 3050 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 3050 3250 50  0001 C CNN
+	1    3050 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 3750 2850 4150
+Wire Wire Line
+	5300 4150 5300 3750
+Wire Wire Line
+	2750 3750 2750 4250
+Wire Wire Line
+	2750 4250 4150 4250
+Wire Wire Line
+	5400 4250 5400 3750
+Wire Wire Line
+	2650 3750 2650 4350
+Wire Wire Line
+	5500 4350 5500 3750
+Wire Wire Line
+	5600 3750 5600 4450
+Wire Wire Line
+	5600 4450 3650 4450
+Wire Wire Line
+	2550 4450 2550 3750
+Wire Wire Line
+	3250 3750 3250 4550
+Wire Wire Line
+	7350 4550 7350 3750
+Wire Wire Line
+	3150 3750 3150 4650
+Wire Wire Line
+	7450 4650 7450 3750
+Wire Wire Line
+	3050 3750 3050 4750
+Wire Wire Line
+	3050 4750 4900 4750
+Wire Wire Line
+	7550 4750 7550 3750
+Wire Wire Line
+	7650 3750 7650 4850
+Wire Wire Line
+	2950 4850 2950 3750
+$Comp
+L Device:LED D1
+U 1 1 5E6C3E77
+P 3650 6000
+F 0 "D1" V 3750 6000 50  0000 R CNN
+F 1 "LED" V 3598 5883 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3650 6000 50  0001 C CNN
+F 3 "~" H 3650 6000 50  0001 C CNN
+	1    3650 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E6C53FD
+P 3650 6400
+F 0 "R1" H 3700 6400 50  0000 L CNN
+F 1 "220R" V 3650 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3580 6400 50  0001 C CNN
+F 3 "~" H 3650 6400 50  0001 C CNN
+	1    3650 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6150 3650 6250
+$Comp
+L Device:LED D2
+U 1 1 5E6D6950
+P 3900 6000
+F 0 "D2" V 4000 6000 50  0000 R CNN
+F 1 "LED" V 3848 5883 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3900 6000 50  0001 C CNN
+F 3 "~" H 3900 6000 50  0001 C CNN
+	1    3900 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E6D6956
+P 3900 6400
+F 0 "R2" H 3950 6400 50  0000 L CNN
+F 1 "220R" V 3900 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3830 6400 50  0001 C CNN
+F 3 "~" H 3900 6400 50  0001 C CNN
+	1    3900 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6150 3900 6250
+$Comp
+L Device:LED D3
+U 1 1 5E6E76CE
+P 4150 6000
+F 0 "D3" V 4250 6000 50  0000 R CNN
+F 1 "LED" V 4098 5883 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4150 6000 50  0001 C CNN
+F 3 "~" H 4150 6000 50  0001 C CNN
+	1    4150 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E6E76D4
+P 4150 6400
+F 0 "R3" H 4200 6400 50  0000 L CNN
+F 1 "220R" V 4150 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4080 6400 50  0001 C CNN
+F 3 "~" H 4150 6400 50  0001 C CNN
+	1    4150 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6150 4150 6250
+$Comp
+L Device:LED D4
+U 1 1 5E6F6E49
+P 4400 6000
+F 0 "D4" V 4500 6000 50  0000 R CNN
+F 1 "LED" V 4348 5883 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4400 6000 50  0001 C CNN
+F 3 "~" H 4400 6000 50  0001 C CNN
+	1    4400 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E6F6E4F
+P 4400 6400
+F 0 "R4" H 4450 6400 50  0000 L CNN
+F 1 "220R" V 4400 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4330 6400 50  0001 C CNN
+F 3 "~" H 4400 6400 50  0001 C CNN
+	1    4400 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 6150 4400 6250
+$Comp
+L Device:LED D5
+U 1 1 5E706EC3
+P 4650 6000
+F 0 "D5" V 4750 6000 50  0000 R CNN
+F 1 "LED" V 4598 5883 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4650 6000 50  0001 C CNN
+F 3 "~" H 4650 6000 50  0001 C CNN
+	1    4650 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E706EC9
+P 4650 6400
+F 0 "R5" H 4700 6400 50  0000 L CNN
+F 1 "220R" V 4650 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4580 6400 50  0001 C CNN
+F 3 "~" H 4650 6400 50  0001 C CNN
+	1    4650 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 6150 4650 6250
+$Comp
+L Device:LED D6
+U 1 1 5E716DB5
+P 4900 6000
+F 0 "D6" V 5000 6000 50  0000 R CNN
+F 1 "LED" V 4848 5883 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4900 6000 50  0001 C CNN
+F 3 "~" H 4900 6000 50  0001 C CNN
+	1    4900 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E716DBB
+P 4900 6400
+F 0 "R6" H 4950 6400 50  0000 L CNN
+F 1 "220R" V 4900 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4830 6400 50  0001 C CNN
+F 3 "~" H 4900 6400 50  0001 C CNN
+	1    4900 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6150 4900 6250
+$Comp
+L Device:LED D7
+U 1 1 5E7277F2
+P 5150 6000
+F 0 "D7" V 5250 6000 50  0000 R CNN
+F 1 "LED" V 5098 5883 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 5150 6000 50  0001 C CNN
+F 3 "~" H 5150 6000 50  0001 C CNN
+	1    5150 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E7277F8
+P 5150 6400
+F 0 "R7" H 5200 6400 50  0000 L CNN
+F 1 "220R" V 5150 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5080 6400 50  0001 C CNN
+F 3 "~" H 5150 6400 50  0001 C CNN
+	1    5150 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6150 5150 6250
+$Comp
+L Device:LED D8
+U 1 1 5E7374C6
+P 5400 6000
+F 0 "D8" V 5500 6000 50  0000 R CNN
+F 1 "LED" V 5348 5883 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 5400 6000 50  0001 C CNN
+F 3 "~" H 5400 6000 50  0001 C CNN
+	1    5400 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E7374CC
+P 5400 6400
+F 0 "R8" H 5450 6400 50  0000 L CNN
+F 1 "220R" V 5400 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5330 6400 50  0001 C CNN
+F 3 "~" H 5400 6400 50  0001 C CNN
+	1    5400 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6150 5400 6250
+Wire Wire Line
+	3650 6550 3650 6650
+Wire Wire Line
+	3650 6650 3900 6650
+Wire Wire Line
+	5400 6650 5400 6550
+Wire Wire Line
+	5150 6550 5150 6650
+Connection ~ 5150 6650
+Wire Wire Line
+	5150 6650 5400 6650
+Wire Wire Line
+	4900 6550 4900 6650
+Connection ~ 4900 6650
+Wire Wire Line
+	4900 6650 5150 6650
+Wire Wire Line
+	4650 6550 4650 6650
+Connection ~ 4650 6650
+Wire Wire Line
+	4650 6650 4900 6650
+Wire Wire Line
+	4400 6550 4400 6650
+Connection ~ 4400 6650
+Wire Wire Line
+	4400 6650 4550 6650
+Wire Wire Line
+	4150 6550 4150 6650
+Connection ~ 4150 6650
+Wire Wire Line
+	4150 6650 4400 6650
+Wire Wire Line
+	3900 6550 3900 6650
+Connection ~ 3900 6650
+Wire Wire Line
+	3900 6650 4150 6650
+$Comp
+L power:GND #PWR03
+U 1 1 5E7BAFDD
+P 4550 6750
+F 0 "#PWR03" H 4550 6500 50  0001 C CNN
+F 1 "GND" H 4555 6577 50  0000 C CNN
+F 2 "" H 4550 6750 50  0001 C CNN
+F 3 "" H 4550 6750 50  0001 C CNN
+	1    4550 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6750 4550 6650
+Connection ~ 4550 6650
+Wire Wire Line
+	4550 6650 4650 6650
+Text HLabel 7350 5000 2    50   Output ~ 0
+B_0
+Text HLabel 7350 5100 2    50   Output ~ 0
+B_1
+Text HLabel 7350 5200 2    50   Output ~ 0
+B_2
+Text HLabel 7350 5300 2    50   Output ~ 0
+B_3
+Text HLabel 7350 5400 2    50   Output ~ 0
+B_4
+Text HLabel 7350 5500 2    50   Output ~ 0
+B_5
+Text HLabel 7350 5600 2    50   Output ~ 0
+B_6
+Text HLabel 7350 5700 2    50   Output ~ 0
+B_7
+Wire Wire Line
+	3650 5850 3650 5700
+Connection ~ 3650 4450
+Wire Wire Line
+	3650 4450 2550 4450
+Connection ~ 3650 5700
+Wire Wire Line
+	3650 5700 3650 4450
+Wire Wire Line
+	3900 5850 3900 5600
+Wire Wire Line
+	2650 4350 3900 4350
+Connection ~ 3900 4350
+Wire Wire Line
+	3900 4350 5500 4350
+Wire Wire Line
+	4150 5850 4150 5500
+Connection ~ 4150 4250
+Wire Wire Line
+	4150 4250 5400 4250
+Wire Wire Line
+	4400 5850 4400 5400
+Wire Wire Line
+	2850 4150 4400 4150
+Connection ~ 4400 4150
+Wire Wire Line
+	4400 4150 5300 4150
+Connection ~ 3900 5600
+Wire Wire Line
+	3900 5600 3900 4350
+Connection ~ 4150 5500
+Wire Wire Line
+	4150 5500 4150 4250
+Connection ~ 4400 5400
+Wire Wire Line
+	4400 5400 4400 4150
+Wire Wire Line
+	4650 5850 4650 5300
+Wire Wire Line
+	2950 4850 4650 4850
+Connection ~ 4650 4850
+Wire Wire Line
+	4650 4850 7650 4850
+Wire Wire Line
+	4900 5850 4900 5200
+Connection ~ 4900 4750
+Wire Wire Line
+	4900 4750 7550 4750
+Wire Wire Line
+	5150 5850 5150 5100
+Wire Wire Line
+	3150 4650 5150 4650
+Connection ~ 5150 4650
+Wire Wire Line
+	5150 4650 7450 4650
+Wire Wire Line
+	5400 5850 5400 5000
+Wire Wire Line
+	3250 4550 5400 4550
+Connection ~ 5400 4550
+Wire Wire Line
+	5400 4550 7350 4550
+Connection ~ 4650 5300
+Wire Wire Line
+	4650 5300 4650 4850
+Connection ~ 4900 5200
+Wire Wire Line
+	4900 5200 4900 4750
+Connection ~ 5150 5100
+Wire Wire Line
+	5150 5100 5150 4650
+Connection ~ 5400 5000
+Wire Wire Line
+	5400 5000 5400 4550
+Wire Wire Line
+	2100 3100 2100 3250
+Wire Wire Line
+	2100 3250 2250 3250
+Wire Wire Line
+	5900 3250 6000 3250
+Wire Wire Line
+	6000 3250 6000 3100
+Wire Wire Line
+	8050 3100 8050 3250
+Wire Wire Line
+	8050 3250 7950 3250
+$Comp
+L power:GND #PWR08
+U 1 1 5E976343
+P 9850 2700
+F 0 "#PWR08" H 9850 2450 50  0001 C CNN
+F 1 "GND" H 9855 2527 50  0000 C CNN
+F 2 "" H 9850 2700 50  0001 C CNN
+F 3 "" H 9850 2700 50  0001 C CNN
+	1    9850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E97663C
+P 9850 2450
+F 0 "C1" H 9900 2550 50  0000 L CNN
+F 1 "100nF" H 9900 2350 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 9888 2300 50  0001 C CNN
+F 3 "~" H 9850 2450 50  0001 C CNN
+	1    9850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 2300 9850 2250
+Wire Wire Line
+	9850 2600 9850 2650
+$Comp
+L power:+5V #PWR01
+U 1 1 5D5AFA7F
+P 2100 3100
+F 0 "#PWR01" H 2100 2950 50  0001 C CNN
+F 1 "+5V" H 2115 3273 50  0000 C CNN
+F 2 "" H 2100 3100 50  0001 C CNN
+F 3 "" H 2100 3100 50  0001 C CNN
+	1    2100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5D5AFF5C
+P 6000 3100
+F 0 "#PWR04" H 6000 2950 50  0001 C CNN
+F 1 "+5V" H 6015 3273 50  0000 C CNN
+F 2 "" H 6000 3100 50  0001 C CNN
+F 3 "" H 6000 3100 50  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5D5B03D0
+P 3850 3700
+F 0 "#PWR02" H 3850 3550 50  0001 C CNN
+F 1 "+5V" H 3865 3873 50  0000 C CNN
+F 2 "" H 3850 3700 50  0001 C CNN
+F 3 "" H 3850 3700 50  0001 C CNN
+	1    3850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS173 U2
+U 1 1 5E3D86BB
+P 5000 3250
+F 0 "U2" V 5350 2550 50  0000 L CNN
+F 1 "74LS173" V 5000 3100 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 5000 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS173" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5D5C066A
+P 8050 3100
+F 0 "#PWR05" H 8050 2950 50  0001 C CNN
+F 1 "+5V" H 8065 3273 50  0000 C CNN
+F 2 "" H 8050 3100 50  0001 C CNN
+F 3 "" H 8050 3100 50  0001 C CNN
+	1    8050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5D5C808A
+P 9850 2200
+F 0 "#PWR07" H 9850 2050 50  0001 C CNN
+F 1 "+5V" H 9865 2373 50  0000 C CNN
+F 2 "" H 9850 2200 50  0001 C CNN
+F 3 "" H 9850 2200 50  0001 C CNN
+	1    9850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D5C9449
+P 3500 1250
+F 0 "TP1" H 3558 1368 50  0001 L CNN
+F 1 "BUS_7" V 3500 1450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3700 1250 50  0001 C CNN
+F 3 "~" H 3700 1250 50  0001 C CNN
+	1    3500 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1250 3500 2200
+Wire Wire Line
+	2550 2200 3500 2200
+Connection ~ 3500 2200
+Wire Wire Line
+	3500 2200 5600 2200
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D5D11EF
+P 3600 1250
+F 0 "TP2" H 3658 1368 50  0001 L CNN
+F 1 "BUS_6" V 3600 1450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3800 1250 50  0001 C CNN
+F 3 "~" H 3800 1250 50  0001 C CNN
+	1    3600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D5D1448
+P 3700 1250
+F 0 "TP3" H 3758 1368 50  0001 L CNN
+F 1 "BUS_5" V 3700 1450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3900 1250 50  0001 C CNN
+F 3 "~" H 3900 1250 50  0001 C CNN
+	1    3700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D5D162A
+P 3800 1250
+F 0 "TP4" H 3858 1368 50  0001 L CNN
+F 1 "BUS_4" V 3800 1450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4000 1250 50  0001 C CNN
+F 3 "~" H 4000 1250 50  0001 C CNN
+	1    3800 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5D5D192D
+P 3900 1250
+F 0 "TP5" H 3958 1368 50  0001 L CNN
+F 1 "BUS_3" V 3900 1450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4100 1250 50  0001 C CNN
+F 3 "~" H 4100 1250 50  0001 C CNN
+	1    3900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5D5D1AED
+P 4000 1250
+F 0 "TP6" H 4058 1368 50  0001 L CNN
+F 1 "BUS_2" V 4000 1450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4200 1250 50  0001 C CNN
+F 3 "~" H 4200 1250 50  0001 C CNN
+	1    4000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5D5D1CAD
+P 4100 1250
+F 0 "TP7" H 4158 1368 50  0001 L CNN
+F 1 "BUS_1" V 4100 1450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4300 1250 50  0001 C CNN
+F 3 "~" H 4300 1250 50  0001 C CNN
+	1    4100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5D5D1E18
+P 4200 1250
+F 0 "TP8" H 4258 1368 50  0001 L CNN
+F 1 "BUS_0" V 4200 1450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4400 1250 50  0001 C CNN
+F 3 "~" H 4400 1250 50  0001 C CNN
+	1    4200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1250 3600 2100
+Wire Wire Line
+	2650 2100 3600 2100
+Connection ~ 3600 2100
+Wire Wire Line
+	3600 2100 5500 2100
+Wire Wire Line
+	3700 1250 3700 2000
+Connection ~ 3700 2000
+Wire Wire Line
+	3700 2000 5400 2000
+Wire Wire Line
+	3800 1250 3800 1900
+Connection ~ 3800 1900
+Wire Wire Line
+	3800 1900 5300 1900
+Wire Wire Line
+	3900 1250 3900 1800
+Connection ~ 3900 1800
+Wire Wire Line
+	3900 1800 7650 1800
+Wire Wire Line
+	4000 1250 4000 1700
+Connection ~ 4000 1700
+Wire Wire Line
+	4000 1700 7550 1700
+Wire Wire Line
+	4100 1250 4100 1600
+Connection ~ 4100 1600
+Wire Wire Line
+	4100 1600 7450 1600
+Wire Wire Line
+	4200 1250 4200 1500
+Wire Wire Line
+	3250 1500 4200 1500
+Connection ~ 4200 1500
+Wire Wire Line
+	4200 1500 7350 1500
+$Comp
+L Connector:Conn_01x08_Male J1
+U 1 1 5D611EA7
+P 1700 950
+F 0 "J1" H 1808 1431 50  0000 C CNN
+F 1 "Bus" H 1808 1340 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal" H 1700 950 50  0001 C CNN
+F 3 "~" H 1700 950 50  0001 C CNN
+	1    1700 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1350 2000 1350
+Wire Wire Line
+	2000 1350 2000 1500
+Connection ~ 2000 1500
+Wire Wire Line
+	2000 1500 3250 1500
+Wire Wire Line
+	1900 1250 2050 1250
+Wire Wire Line
+	2050 1250 2050 1600
+Connection ~ 2050 1600
+Wire Wire Line
+	2050 1600 3150 1600
+Wire Wire Line
+	1900 1150 2100 1150
+Wire Wire Line
+	2100 1150 2100 1700
+Connection ~ 2100 1700
+Wire Wire Line
+	2100 1700 3050 1700
+Wire Wire Line
+	1900 1050 2150 1050
+Wire Wire Line
+	2150 1050 2150 1800
+Connection ~ 2150 1800
+Wire Wire Line
+	2150 1800 2950 1800
+Wire Wire Line
+	1900 950  2200 950 
+Wire Wire Line
+	2200 950  2200 1900
+Connection ~ 2200 1900
+Wire Wire Line
+	2200 1900 2850 1900
+Wire Wire Line
+	1900 850  2250 850 
+Wire Wire Line
+	2250 850  2250 2000
+Connection ~ 2250 2000
+Wire Wire Line
+	2250 2000 2750 2000
+Wire Wire Line
+	1900 750  2300 750 
+Wire Wire Line
+	2300 750  2300 2100
+Connection ~ 2300 2100
+Wire Wire Line
+	2300 2100 2650 2100
+Wire Wire Line
+	1900 650  2350 650 
+Wire Wire Line
+	2350 650  2350 2200
+Connection ~ 2350 2200
+Wire Wire Line
+	2350 2200 2550 2200
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5D66726F
+P 10750 2500
+F 0 "J4" H 10722 2382 50  0000 R CNN
+F 1 "Power" H 10722 2473 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 10750 2500 50  0001 C CNN
+F 3 "~" H 10750 2500 50  0001 C CNN
+	1    10750 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10550 2400 10550 2250
+Wire Wire Line
+	10550 2250 9850 2250
+Connection ~ 9850 2250
+Wire Wire Line
+	9850 2250 9850 2200
+Wire Wire Line
+	10550 2500 10550 2650
+Wire Wire Line
+	10550 2650 9850 2650
+Connection ~ 9850 2650
+Wire Wire Line
+	9850 2650 9850 2700
+$Comp
+L Connector:TestPoint TP21
+U 1 1 5D6805F0
+P 10550 2250
+F 0 "TP21" H 10608 2368 50  0001 L CNN
+F 1 "+5V" H 10608 2322 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 10750 2250 50  0001 C CNN
+F 3 "~" H 10750 2250 50  0001 C CNN
+	1    10550 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10550 2250
+$Comp
+L Connector:TestPoint TP22
+U 1 1 5D6811E8
+P 10550 2650
+F 0 "TP22" H 10492 2676 50  0001 R CNN
+F 1 "GND" H 10492 2722 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 10750 2650 50  0001 C CNN
+F 3 "~" H 10750 2650 50  0001 C CNN
+	1    10550 2650
+	-1   0    0    1   
+$EndComp
+Connection ~ 10550 2650
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5D6F8217
+P 6350 5950
+F 0 "TP16" H 6408 6068 50  0001 L CNN
+F 1 "B_0" V 6350 6150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6550 5950 50  0001 C CNN
+F 3 "~" H 6550 5950 50  0001 C CNN
+	1    6350 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 5950 6350 5000
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5D6F821E
+P 6250 5950
+F 0 "TP15" H 6308 6068 50  0001 L CNN
+F 1 "B_1" V 6250 6150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6450 5950 50  0001 C CNN
+F 3 "~" H 6450 5950 50  0001 C CNN
+	1    6250 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5D6F8224
+P 6150 5950
+F 0 "TP14" H 6208 6068 50  0001 L CNN
+F 1 "B_2" V 6150 6150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6350 5950 50  0001 C CNN
+F 3 "~" H 6350 5950 50  0001 C CNN
+	1    6150 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5D6F822A
+P 6050 5950
+F 0 "TP13" H 6108 6068 50  0001 L CNN
+F 1 "B_3" V 6050 6150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6250 5950 50  0001 C CNN
+F 3 "~" H 6250 5950 50  0001 C CNN
+	1    6050 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5D6F8230
+P 5950 5950
+F 0 "TP12" H 6008 6068 50  0001 L CNN
+F 1 "B_4" V 5950 6150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6150 5950 50  0001 C CNN
+F 3 "~" H 6150 5950 50  0001 C CNN
+	1    5950 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5D6F8236
+P 5850 5950
+F 0 "TP11" H 5908 6068 50  0001 L CNN
+F 1 "B_5" V 5850 6150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6050 5950 50  0001 C CNN
+F 3 "~" H 6050 5950 50  0001 C CNN
+	1    5850 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5D6F823C
+P 5750 5950
+F 0 "TP10" H 5808 6068 50  0001 L CNN
+F 1 "B_6" V 5750 6150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 5950 5950 50  0001 C CNN
+F 3 "~" H 5950 5950 50  0001 C CNN
+	1    5750 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5D6F8242
+P 5650 5950
+F 0 "TP9" H 5708 6068 50  0001 L CNN
+F 1 "B_7" V 5650 6150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 5850 5950 50  0001 C CNN
+F 3 "~" H 5850 5950 50  0001 C CNN
+	1    5650 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 5950 6250 5100
+Wire Wire Line
+	6150 5950 6150 5200
+Wire Wire Line
+	6050 5950 6050 5300
+Wire Wire Line
+	5950 5950 5950 5400
+Wire Wire Line
+	5850 5950 5850 5500
+Wire Wire Line
+	5750 5950 5750 5600
+Wire Wire Line
+	5650 5950 5650 5700
+Wire Wire Line
+	5400 5000 6350 5000
+Wire Wire Line
+	5150 5100 6250 5100
+Wire Wire Line
+	4900 5200 6150 5200
+Wire Wire Line
+	4650 5300 6050 5300
+Wire Wire Line
+	4400 5400 5950 5400
+Wire Wire Line
+	4150 5500 5850 5500
+Wire Wire Line
+	3900 5600 5750 5600
+Wire Wire Line
+	3650 5700 5650 5700
+Connection ~ 5650 5700
+Wire Wire Line
+	5650 5700 6900 5700
+Connection ~ 5750 5600
+Wire Wire Line
+	5750 5600 6950 5600
+Connection ~ 5850 5500
+Wire Wire Line
+	5850 5500 7000 5500
+Connection ~ 5950 5400
+Wire Wire Line
+	5950 5400 7050 5400
+Connection ~ 6050 5300
+Wire Wire Line
+	6050 5300 7100 5300
+Connection ~ 6150 5200
+Wire Wire Line
+	6150 5200 7150 5200
+Connection ~ 6250 5100
+Wire Wire Line
+	6250 5100 7200 5100
+Connection ~ 6350 5000
+Wire Wire Line
+	6350 5000 7250 5000
+$Comp
+L Connector:Conn_01x08_Male J2
+U 1 1 5D77A988
+P 7550 6200
+F 0 "J2" H 7522 6082 50  0000 R CNN
+F 1 "Address" H 7522 6173 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal" H 7550 6200 50  0001 C CNN
+F 3 "~" H 7550 6200 50  0001 C CNN
+	1    7550 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 5800 7250 5800
+Wire Wire Line
+	7250 5800 7250 5000
+Connection ~ 7250 5000
+Wire Wire Line
+	7250 5000 7350 5000
+Wire Wire Line
+	7350 5900 7200 5900
+Wire Wire Line
+	7200 5900 7200 5100
+Connection ~ 7200 5100
+Wire Wire Line
+	7200 5100 7350 5100
+Wire Wire Line
+	7350 6000 7150 6000
+Wire Wire Line
+	7150 6000 7150 5200
+Connection ~ 7150 5200
+Wire Wire Line
+	7150 5200 7350 5200
+Wire Wire Line
+	7350 6100 7100 6100
+Wire Wire Line
+	7100 6100 7100 5300
+Connection ~ 7100 5300
+Wire Wire Line
+	7100 5300 7350 5300
+Wire Wire Line
+	7350 6200 7050 6200
+Wire Wire Line
+	7050 6200 7050 5400
+Connection ~ 7050 5400
+Wire Wire Line
+	7050 5400 7350 5400
+Wire Wire Line
+	7350 6300 7000 6300
+Wire Wire Line
+	7000 6300 7000 5500
+Connection ~ 7000 5500
+Wire Wire Line
+	7000 5500 7350 5500
+Wire Wire Line
+	7350 6400 6950 6400
+Wire Wire Line
+	6950 6400 6950 5600
+Connection ~ 6950 5600
+Wire Wire Line
+	6950 5600 7350 5600
+Wire Wire Line
+	7350 6500 6900 6500
+Wire Wire Line
+	6900 6500 6900 5700
+Connection ~ 6900 5700
+Wire Wire Line
+	6900 5700 7350 5700
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5D5B8796
+P 9950 4650
+F 0 "J3" H 9922 4624 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 9922 4533 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 9950 4650 50  0001 C CNN
+F 3 "~" H 9950 4650 50  0001 C CNN
+	1    9950 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4550 8650 4050
+Connection ~ 8650 4050
+Wire Wire Line
+	8650 4050 8750 4050
+Wire Wire Line
+	8600 4650 8600 2200
+Connection ~ 8600 2200
+Wire Wire Line
+	8600 2200 8750 2200
+Wire Wire Line
+	8150 4750 8150 2200
+Wire Wire Line
+	8150 2200 6400 2200
+Wire Wire Line
+	6400 2200 6400 2350
+Connection ~ 6400 2350
+Wire Wire Line
+	6400 2350 6650 2350
+Wire Wire Line
+	8250 4850 8250 2550
+Connection ~ 8250 2550
+Wire Wire Line
+	8250 2550 8750 2550
+Wire Wire Line
+	8650 4550 9550 4550
+Wire Wire Line
+	8150 4750 9250 4750
+Wire Wire Line
+	8250 4850 9100 4850
+$Comp
+L Connector:TestPoint TP20
+U 1 1 5D672735
+P 9550 4350
+F 0 "TP20" H 9608 4468 50  0001 L CNN
+F 1 "~BO~" H 9500 4550 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9750 4350 50  0001 C CNN
+F 3 "~" H 9750 4350 50  0001 C CNN
+	1    9550 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 9550 4550
+Wire Wire Line
+	9550 4550 9750 4550
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5D672DE7
+P 9400 4350
+F 0 "TP19" H 9458 4468 50  0001 L CNN
+F 1 "CLR" H 9330 4560 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9600 4350 50  0001 C CNN
+F 3 "~" H 9600 4350 50  0001 C CNN
+	1    9400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5D67311D
+P 9250 4350
+F 0 "TP18" H 9308 4468 50  0001 L CNN
+F 1 "CLK" H 9180 4560 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9450 4350 50  0001 C CNN
+F 3 "~" H 9450 4350 50  0001 C CNN
+	1    9250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5D673541
+P 9100 4350
+F 0 "TP17" H 9158 4468 50  0001 L CNN
+F 1 "~BI~" H 9060 4550 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 9300 4350 50  0001 C CNN
+F 3 "~" H 9300 4350 50  0001 C CNN
+	1    9100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4350 9550 4550
+Wire Wire Line
+	9400 4350 9400 4650
+Wire Wire Line
+	8600 4650 9400 4650
+Connection ~ 9400 4650
+Wire Wire Line
+	9400 4650 9750 4650
+Wire Wire Line
+	9250 4350 9250 4750
+Connection ~ 9250 4750
+Wire Wire Line
+	9250 4750 9750 4750
+Wire Wire Line
+	9100 4350 9100 4850
+Connection ~ 9100 4850
+Wire Wire Line
+	9100 4850 9750 4850
+Wire Wire Line
+	8050 3250 8050 4050
+Connection ~ 8050 3250
+Connection ~ 8050 4050
+Wire Wire Line
+	8050 4050 8650 4050
+$EndSCHEMATC
