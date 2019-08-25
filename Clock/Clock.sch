@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Clock-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -8,9 +9,9 @@ Title "8-Bit Computer"
 Date ""
 Rev "v01"
 Comp ""
-Comment1 ""
-Comment2 "creativecommons.org/licenses/by/4.0"
-Comment3 "License CC by 4.0"
+Comment1 "creativecommons.org/licenses/by/4.0"
+Comment2 "License CC by 4.0"
+Comment3 "Based on original design by Ben Eater"
 Comment4 "Author: Shane Poppleton"
 $EndDescr
 $Comp
